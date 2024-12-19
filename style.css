@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    background: #f5f5f5;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* 侧边栏样式 */
+.sidebar {
+    width: 300px;
+    background: #2d2d2d;
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    height: 100vh;
+}
+
+.blog-title h1 {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.number {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.label {
+    font-size: 14px;
+    color: #999;
+}
+
+/* 导航菜单 */
+.menu {
+    margin-top: 30px;
+}
+
+.menu a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 0;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #1890ff;
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+/* 内容区样式 */
+.content {
+    margin-left: 300px;
+    padding: 40px;
+    flex: 1;
+}
+
+.post {
+    background: #fff;
+    padding: 30px;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.post-title {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.post-meta {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.post-meta span {
+    margin-right: 20px;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 15px;
+    color: #1890ff;
+    text-decoration: none;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+/* 新增文章表单样式 */
+.post-form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    background: #1890ff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit-btn:hover {
+    background: #40a9ff;
+}
+
+.post-detail {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.post-detail .post-content {
+    margin-top: 30px;
+    line-height: 1.8;
+}
+
+.post-detail .post-content p {
+    margin-bottom: 1.5em;
+}
+
+.error-message {
+    text-align: center;
+    padding: 40px;
+}
+
+.error-message h2 {
+    color: #ff4d4f;
+    margin-bottom: 20px;
+}
+
+.error-message a {
+    color: #1890ff;
+    text-decoration: none;
+}
+
+.error-message a:hover {
+    text-decoration: underline;
+}
+
+.delete-btn {
+    background-color: #ff4444;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.delete-btn:hover {
+    background-color: #cc0000;
+}
+
+.post-actions {
+    margin-top: 20px;
+    text-align: right;
+}
+
+/* 分类列表样式 */
+.categories-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.category-item {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.category-item:hover {
+    transform: translateY(-2px);
+}
+
+.category-item a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.category-item h3 {
+    margin: 0;
+    color: #333;
+}
+
+.post-count {
+    color: #666;
+    font-size: 14px;
+}
+
+/* 分类文章列表样式 */
+.category-title {
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #1890ff;
+}
+
+.loading {
+    text-align: center;
+    padding: 40px;
+    color: #666;
+}
+
+.no-posts {
+    text-align: center;
+    padding: 40px;
+    color: #666;
+    font-size: 16px;
+}
+
+.error-message {
+    text-align: center;
+    padding: 40px;
+    color: #ff4d4f;
+} 
